@@ -23,7 +23,7 @@ function convertCurrency() {
   currencies.forEach((item) => {
     if (item.code === currency_select.value) {
       const result = item.mid * input_amount.value;
-      console.log(item.mid);
+      result.toFixed(2);
       result_value.innerHTML = result + ' PLN';
     }
   });
