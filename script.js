@@ -23,8 +23,8 @@ function convertCurrency() {
   currencies.forEach((item) => {
     if (item.code === currency_select.value) {
       const result = item.mid * input_amount.value;
-      result.toFixed(2);
-      result_value.innerHTML = result + ' PLN';
+      const result_fixed = result.toFixed(2);
+      result_value.innerHTML = result_fixed + ' PLN';
     }
   });
 }
