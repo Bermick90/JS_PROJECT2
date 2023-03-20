@@ -1,9 +1,9 @@
-const input_amount = document.getElementById('amount');
-const currency_select = document.getElementById('currencies');
-const result_value = document.getElementById('result');
-const check_button = document.getElementById('button');
-const currency_table = getCurrencies();
+const inputAmount = document.getElementById('amount');
+const currencySelect = document.getElementById('currencies');
 const resultValue = document.getElementById('result');
+const checkButton = document.getElementById('button');
+const currencyTable = getCurrencies();
+
 const select = document.getElementById('select');
 let currencies;
 let currencyPLN;
@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', getCurrencies);
 
 function convertCurrency() {
   currencies.forEach((item) => {
-    if (item.code === currency_select.value) {
-      const result = item.mid * input_amount.value;
-      const result_fixed = result.toFixed(2);
-      result_value.innerHTML = result_fixed + ' PLN';
+    if (item.code === currencySelect.value) {
+      const result = item.mid * inputAmount.value;
+      const resultFixed = result.toFixed(2);
+      resultValue.innerHTML = resultFixed + ' PLN';
     }
   });
 }
