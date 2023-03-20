@@ -31,9 +31,10 @@ function convertCurrency() {
   });
 }
 
-const button = document
-  .getElementById('button')
-  .addEventListener('submit', (event) => {
+const form = document.getElementById('form');
+{
+  form.addEventListener('submit', (event) => {
     event.preventDefault();
     convertCurrency();
   });
+}
