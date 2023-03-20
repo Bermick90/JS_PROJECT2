@@ -27,18 +27,17 @@
         <div class="app__logo"><img src="./GRU.png" /></div>
         <h1 class="text--center">Pigeon Currency Calculator</h1>
       </div>
-      <div class="calculation">
+      <form class="calculation">
         <input id="amount" type="number" min="0.01" />
         <select name="currency" id="currencies">
           <option value="EUR">EUR</option>
           <option value="USD">USD</option>
           <option value="CHF">CHF</option>
         </select>
-        <button id="button">Check</button>
+        <input type="submit" id="button" value="Check" />
         <p id="result"></p>
-      </div>
+      </form>
     </main>
-    <footer></footer>
 
     <script src="script.js"></script>
   </body>
