@@ -1,14 +1,13 @@
 .text--center {
   text-align: center;
 
-  padding: 10 20;
+  padding: 10px 20px;
 }
 .app__logo img {
   width: 25%;
   height: auto;
 }
 .logo {
-  display: block;
   text-align: center;
   margin: 50px 50px;
 }

@@ -6,7 +6,6 @@ const currencyTable = getCurrencies();
 
 const select = document.getElementById('select');
 let currencies;
-let currencyPLN;
 
 resultValue.innerHTML = ' XXX PLN';
 
@@ -34,4 +33,7 @@ function convertCurrency() {
 
 const button = document
   .getElementById('button')
-  .addEventListener('click', convertCurrency);
+  .addEventListener('submit', (event) => {
+    event.preventDefault();
+    convertCurrency();
+  });
